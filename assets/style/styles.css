@@ -58,6 +58,12 @@ nav ul li a {
   font-size: 30px;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
 #carrusel-texto{
   background-color: rgba(0, 0, 0, 0.5); 
   color: white;
