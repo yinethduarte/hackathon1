@@ -1,0 +1,446 @@
+/* normalizando archivos */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+html, body{
+  height: 100%;
+  width: 100%;
+}
+
+/* Header */
+
+.logo img{
+  object-fit: contain;
+}
+
+.contenedor {
+  padding: 0 0 20px;
+}
+
+nav {
+  z-index: 1;
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #494A4E;
+  position: relative;
+  height: 70px;
+  /* border: green 2px solid; */
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+  /* border: blue solid 2px; */
+}
+
+nav ul li{
+  list-style-type: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  padding: 10px 10px;
+  color: #F5F4F4;
+}
+
+.menu-icon {
+  display: none;
+}
+
+#menu-icon i{
+  color: #F5F4FA;
+  font-size: 30px;
+}
+
+#carrusel-texto{
+  background-color: rgba(0, 0, 0, 0.5); 
+  color: white;
+  padding: 20px; 
+  border-radius: 10px; 
+  max-width: 100%; 
+  width: 300px; 
+  margin: 0 auto; 
+  box-sizing: border-box; 
+  p{
+    margin: 0; 
+    padding: 5px; 
+    font-size: 15px;
+}
+}
+/* #carouselExampleDark{
+  /* width: auto !important;
+  height: 500px !important; */
+  /* border:2px red solid;  */
+
+/*#largo{
+  /* height: 400px; */
+
+.carousel-dark .carousel-caption {
+  color: #0000 !important; /* Color del texto en la leyenda */
+}
+
+
+
+
+/* Categorias */
+.container-cat{
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    padding: 1rem;
+}
+.subtitulo{
+    text-align: center;
+}
+.container-categorias{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+      
+}
+.enlace-categorias{
+    text-decoration: none;
+    background-color: #2596be; 
+    padding: 1em .7em;
+    color: white;
+    border-radius: 12px;
+    font-size: 10px;
+    
+}
+/* Catalogo */
+.container-catalogo{
+    height: auto;
+    padding: 1rem;
+    background-color: #d2d4d7;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+
+}
+.card{
+width: 40%;
+height: 200px;
+display: flex;
+flex-direction: column;
+gap: .3rem;
+padding: 5px;
+
+}
+.card img{
+    width: 100%;
+    height: 98px;
+    object-fit: contain;
+    border-radius: 5px;
+
+}
+.contenido-card{
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+    padding: .3rem;
+}
+.secciones-card{
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: .2rem;
+    padding-left: 5px;
+   
+
+}
+.titulo-producto{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.enlace-acc{
+    text-decoration: none;
+    background-color: #2596be; 
+    padding: .1em .3em;
+    color: white;
+    border-radius: 12px;
+    font-size: 10px;
+    text-align: center;
+}
+.container-btn{
+    display: flex;
+    align-items: center;
+    padding: .3rem;
+}
+.cars{
+    color: white;
+    background-color: #2596be;
+    padding: .1em .3em;
+    border: none;
+    border-radius: 10px;
+}
+
+
+
+/* Registrarse */
+.login-contenedor {
+  display: flex;
+  flex-direction: column; /* Cambia la dirección a columna en pantallas pequeñas */
+  max-width: 580px; /* Establece un ancho máximo */
+  width: 100%; 
+  height: auto;
+  background: #fff;
+  border-radius: 5px;
+  margin: 2%;
+}
+
+.registro,
+.login {
+  flex: 1;
+}
+
+.registro {
+  padding: 20px; /* Reduce el espacio de relleno en pantallas pequeñas */
+}
+
+.registro h2 {
+  color: #1f919e;
+  margin-bottom: 20px; 
+}
+
+.registro input {
+  width: 100%;
+  padding: 5px;
+  font-size: 16px;
+  margin-bottom: 15px; /* Reduce el espacio entre los campos en pantallas pequeñas */
+  border-top-style: none;
+  border-left-style: none;
+  border-right-style: none;
+  border-bottom: 1px solid #a8a8a8;
+  color: #1b1d20;
+}
+
+.registro .submit {
+  width: 100%; /* Ocupa todo el ancho disponible */
+}
+
+.login {
+  background-color: #338c96;
+  padding: 20px; 
+}
+
+.login h2 {
+  color: #fff;
+  margin-bottom: 20px; 
+}
+
+.login button {
+  width: 100%;
+  margin: 15px 0px;
+  padding: 10px;
+  cursor: pointer;
+}
+.login .fb {
+  background: #3b5999;
+  border-style: none;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.login .tw {
+  background: #55acef;
+  border-style: none;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.login .correo {
+  background: #88b87f;
+  border-style: none;
+  border-radius: 10px;
+  color: #fff;
+}
+
+/* query formulario */
+
+@media only screen and (max-width: 768px) {
+  .registro,
+  .login {
+    padding: 10px; /* Reduce el espacio de relleno general*/
+  }
+
+  .registro h2,
+  .login h2 {
+    margin-bottom: 10px; /* Reduce el espacio entre los títulos y los campos */
+  }
+
+  .registro input {
+    margin-bottom: 10px; 
+  }
+}
+
+
+/* footer */
+.footer{
+    background-color: #338c96;
+    padding: .5rem;
+}
+.contenedor-footer{
+  width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.enlace-footer{
+ color: white;
+ text-decoration: none;
+}
+.text-footer{
+    color: white;
+}
+
+/* query navbar */
+
+@media (max-width: 768px){
+
+  nav ul{
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    text-align: center;
+    background: #494A4E; 
+    gap: 0;
+    overflow: hidden; 
+    max-height: 0px;
+  } 
+
+  nav ul li{
+    padding: 12px;
+  }
+
+  .menu-icon{
+    display: block;
+  } 
+  .carousel-item img {
+    width: 100%; 
+    height: 500px;
+    object-fit: cover; 
+  }
+ 
+}
+  
+
+@media screen and (min-width: 500px){
+    .subtitulo{
+        font-size: 2.3rem;
+    }
+    .enlace-categorias{
+        text-decoration: none;
+        background-color: #2596be; 
+        padding: 1.2em .9em;
+        color: white;
+        border-radius: 12px;
+        font-size: 13px;
+        
+    }
+     .card img{
+        height: 200px;
+} 
+.contenido-card{
+    width: 100%;
+    gap: 1rem;
+}
+.secciones-card{
+    font-size: 14px;
+    gap: .5rem;
+    padding-left: 5px;
+   
+
+}
+}
+
+@media screen and (min-width: 800px){
+    .card{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .card img{
+        width:100%;
+        
+    
+    }
+}
+/* .cards{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    height: auto;
+    flex-wrap: wrap;
+
+}
+.card{
+width: 40%;
+height: 200px;
+display: flex;
+flex-direction: column;
+gap: .3rem;
+padding: 5px;
+
+}
+.card img{
+    width: 100%;
+    height: 98px;
+    object-fit: contain;
+    border-radius: 5px;
+
+}
+
+.secciones-card{
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: .2rem;
+    padding-left: 5px;
+   
+
+}
+
+.enlace-acc{
+    text-decoration: none;
+    background-color: #2596be; 
+    padding: .1em .3em;
+    color: white;
+    border-radius: 12px;
+    font-size: 10px;
+    text-align: center;
+}
+
+.cars{
+    color: white;
+    background-color: #2596be;
+    padding: .1em .3em;
+    border: none;
+    border-radius: 10px;
+} */
+@media (min-width: 992px) {
+  #carouselExampleDark {
+    max-height: 40vh; 
+  }
+  .carousel-item img {
+      width: 100%; 
+      height: 60vh;
+      object-fit:scale-down;}
+    #imagen-c{
+      max-height: 60vh;
+    }
+}
